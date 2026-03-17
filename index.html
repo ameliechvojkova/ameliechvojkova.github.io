@@ -2,65 +2,125 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Vše o ananasu</title>
-  
+  <title>Vše o Ananasu 🍍</title>
   <style>
-    /* Základní nastavení stránky */
+    /* Zachovávám stejné styly jako minule */
     body {
-      background-color: #fff9e6; /* Světle žlutý nádech pozadí */
+      background-color: #f9fbe7;
+      background-image: linear-gradient(135deg, #f0f4c3 0%, #dce775 100%);
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #4a3c00; /* Tmavě hnědá pro text (připomíná slupku) */
-      line-height: 1.6;
+      color: #33691e;
+      margin: 0;
       padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
-    /* Styl pro hlavní nadpis */
-    h1 {
-      color: #e6b800; /* Sytě žlutá/zlatá */
+    .main-card {
+      background-color: rgba(255, 255, 255, 0.9);
+      max-width: 700px;
+      padding: 40px;
+      border-radius: 30px;
+      border: 5px solid #ffeb3b;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+      position: relative;
       text-align: center;
-      border-bottom: 3px solid #2d5a27; /* Zelená čára pod nadpisem */
-      padding-bottom: 10px;
     }
 
-    /* Styl pro seznamy */
-    ul {
-      background-color: #ffffff;
-      border-left: 5px solid #2d5a27; /* Zelený akcent listů */
-      padding: 15px 40px;
-      border-radius: 8px;
+    /* Styl pro nový nadpis */
+    h1 {
+      color: #fbc02d;
+      font-size: 4em; /* Trochu jsem ho zvětšil, když je teď kratší */
+      text-shadow: 2px 2px #558b2f;
+      margin-bottom: 20px;
+      text-transform: uppercase;
     }
 
-    li {
-      margin-bottom: 10px;
+    h2 {
+      color: #689f38;
+      border-bottom: 2px dashed #fbc02d;
+      padding-bottom: 5px;
     }
 
-    /* Zvýraznění textu */
-    strong {
-      color: #2d5a27;
+    p {
+      line-height: 1.8;
+      font-size: 1.1em;
+      text-align: left;
+    }
+
+    .decor {
+      font-size: 1.5em;
+      position: absolute;
+    }
+    .top-left { top: 10px; left: 10px; }
+    .top-right { top: 10px; right: 10px; }
+    .bottom-left { bottom: 10px; left: 10px; }
+    .bottom-right { bottom: 10px; right: 10px; }
+
+    .pina-promo {
+      margin-top: 30px;
+      padding: 20px;
+      background-color: #fff9c4;
+      border-radius: 15px;
+      border-left: 8px solid #ffca28;
+    }
+
+    .btn-recept {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 15px 25px;
+      background-color: #43a047;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 50px;
+      transition: transform 0.2s, background-color 0.2s;
+    }
+
+    .btn-recept:hover {
+      background-color: #2e7d32;
+      transform: scale(1.05);
     }
   </style>
 </head>
 <body>
 
-  <h1>Ananas: Král tropického ovoce</h1>
+  <div class="main-card">
+    <div class="decor top-left">🍍</div>
+    <div class="decor top-right">🍍</div>
+    <div class="decor bottom-left">🍍</div>
+    <div class="decor bottom-right">🍍</div>
 
-  <p>
-    Vítejte na stránce věnované <strong>ananasu</strong>. Toto exotické ovoce 
-    není jen chutné, ale je také symbolem pohostinnosti a tropického léta.
-  </p>
+    <h1>Ananas</h1>
+    
+    <section>
+      <h2>Odkud pochází?</h2>
+      <p>
+        Ananas pochází z Jižní Ameriky. Místní obyvatelé ho pěstovali stovky let předtím, než se rozšířil do zbytku světa.
+      </p>
+    </section>
 
-  <h3>Proč je ananas skvělý?</h3>
-  <ul>
-    <li><strong>Vitamíny:</strong> Obsahuje obrovské množství vitamínu C.</li>
-    <li><strong>Bromelain:</strong> Enzym, který pomáhá s trávením.</li>
-    <li><strong>Vzhled:</strong> Vypadá jako obří šiška s korunou.</li>
-    <li><strong>Chuť:</strong> Dokonalá rovnováha mezi sladkostí a kyselostí.</li>
-  </ul>
+    <section>
+      <h2>Kde a jak roste?</h2>
+      <p>
+        Ananasy nerostou na stromech, ale na zemi! Jsou to byliny, které mají uprostřed listové růžice jeden velký plod. Nejvíce se jich dnes vypěstuje v Kostarice.
+      </p>
+    </section>
 
-  <p>
-    Zajímavost: Věděli jste, že ananasu trvá téměř <strong>dva roky</strong>, 
-    než vyroste a dozraje do podoby, kterou známe z obchodů?
-  </p>
+    <section>
+      <h2>K čemu se používá?</h2>
+      <p>
+        Je skvělý do ovocných salátů, džusů, ale i ke grilovanému masu. Obsahuje vitamín C a enzymy, které jsou zdravé pro tělo.
+      </p>
+    </section>
+
+    <div class="pina-promo">
+      <p><strong>Zajímavost:</strong> Z ananasu se dělá i skvělý koktejl!</p>
+      <a href="pinacolada.html" class="btn-recept">🍹 RECEPT NA PINA COLADU</a>
+    </div>
+
+  </div>
 
 </body>
 </html>
