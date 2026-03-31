@@ -58,54 +58,46 @@
       line-height: 1.6;
     }
 
-    /* --- TLAČÍTKO PRO NÁVRAT --- */
-    .btn-back {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 25px;
-      background-color: #43a047;
-      color: white;
-      text-decoration: none;
-      border-radius: 50px;
-      font-weight: bold;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      transition: all 0.3s ease;
+    /* --- ŠTÝL PRE TLAČIDLÁ --- */
+    .btn-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px; /* Medzera medzi tlačidlami */
+      margin-top: 30px;
     }
 
-    .btn-back:hover {
-      background-color: #2e7d32;
-      transform: translateY(-2px);
-    }
-
-    /* --- NOVÉ TLAČÍTKO MAURICIUS --- */
-    .btn-mauricius {
+    .btn {
       display: inline-block;
-      margin-top: 10px;
       padding: 15px 30px;
-      background-color: #0288d1; /* Modrá jako oceán */
       color: white;
       text-decoration: none;
       border-radius: 50px;
       font-weight: bold;
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
       transition: all 0.3s ease;
+      width: 200px; /* Jednotná šírka pre obe tlačidlá */
+    }
+
+    .btn-back {
+      background-color: #43a047; /* Zelená */
+    }
+
+    .btn-back:hover {
+      background-color: #2e7d32;
+      transform: translateY(-3px);
+    }
+
+    .btn-mauricius {
+      background-color: #0288d1; /* Modrá */
     }
 
     .btn-mauricius:hover {
       background-color: #01579b;
       transform: translateY(-3px);
-      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
     }
 
-    .buttons-wrapper {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-      margin-top: 30px;
-    }
-
-    /* Dekorace */
+    /* Dekorácie */
     .palm-left, .palm-right { position: absolute; font-size: 3em; }
     .palm-left { bottom: -30px; left: -20px; transform: rotate(-15deg); }
     .palm-right { top: -30px; right: -20px; transform: rotate(15deg); }
@@ -131,10 +123,10 @@
     <p>2. Mixuj, dokud nebude směs hladká a krémová.</p>
     <p>3. Nalij do sklenice a ozdob plátkem ananasu.</p>
     
-    <div class="buttons-wrapper">
-        <a href="cpp.html" class="btn-mauricius">📍 ČTVRTLETKA: MAURICIUS</a>
+    <div class="btn-container">
+        <a href="index.html" class="btn btn-back">⬅ ZPĚT NA ANANAS</a>
         
-        <a href="index.html" class="btn-back">⬅ ZPĚT NA ANANAS</a>
+        <a href="cpp.html" class="btn btn-mauricius">📍 ČTVRTLETKA</a>
     </div>
   </div>
 </body>
