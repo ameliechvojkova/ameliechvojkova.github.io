@@ -31,7 +31,7 @@
     /* Styl pro nový nadpis */
     h1 {
       color: #fbc02d;
-      font-size: 4em; /* Trochu jsem ho zvětšil, když je teď kratší */
+      font-size: 4em; 
       text-shadow: 2px 2px #558b2f;
       margin-bottom: 20px;
       text-transform: uppercase;
@@ -41,6 +41,7 @@
       color: #689f38;
       border-bottom: 2px dashed #fbc02d;
       padding-bottom: 5px;
+      display: inline-block;
     }
 
     p {
@@ -66,11 +67,11 @@
       border-left: 8px solid #ffca28;
     }
 
-    .btn-recept {
+    /* --- STYLY PRO TLAČÍTKA --- */
+    .btn-recept, .btn-pdf {
       display: inline-block;
       margin-top: 15px;
       padding: 15px 25px;
-      background-color: #43a047;
       color: white;
       text-decoration: none;
       font-weight: bold;
@@ -78,10 +79,26 @@
       transition: transform 0.2s, background-color 0.2s;
     }
 
+    .btn-recept {
+      background-color: #43a047;
+    }
+
     .btn-recept:hover {
       background-color: #2e7d32;
       transform: scale(1.05);
     }
+
+    /* Nové tlačítko pro PDF */
+    .btn-pdf {
+      background-color: #0288d1;
+      margin-left: 10px;
+    }
+
+    .btn-pdf:hover {
+      background-color: #01579b;
+      transform: scale(1.05);
+    }
+
   </style>
 </head>
 <body>
@@ -116,8 +133,11 @@
     </section>
 
     <div class="pina-promo">
-      <p><strong>Zajímavost:</strong> Z ananasu se dělá i skvělý koktejl!</p>
+      <p><strong>Zajímavost:</strong> Z ananasu se dělá i skvělý koktejl a píše se o něm v mé práci!</p>
+      
       <a href="pinacolada.html" class="btn-recept">🍹 RECEPT NA PINA COLADU</a>
+      
+      <a href="ctvrtletka.pdf" class="btn-pdf" target="_blank">📄 ČTVRTLETKA (PDF)</a>
     </div>
 
   </div>
